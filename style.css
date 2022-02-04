@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+header{
+    background-image: url(img2/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 170px 0;
+    color: aliceblue;
+    position: relative;
+}
+header h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+header hr{
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 3px solid #fff;
+}
+header p{
+    display:inline-block;
+    width: 650px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+header button{
+    width: 220px;
+    height: 70px;
+    background: none;
+    outline: none;
+    border: 3px solid white;
+    color: white;
+    margin-left:50px;
+    vertical-align: top;
+}
+header .cover{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 60%;
+    top: 0;
+    z-index: -1;
+}
+.photo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 408px);
+}
+.item{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+    transition: background-size 3s;
+}
+.item:nth-child(1){
+    background-image: url(img2/pic01.jpg);
+}
+.item:nth-child(2){
+    background-image: url(img2/pic02.jpg);
+    grid-column: span 2;
+    /*растягиваем элемнт на 2 колонки*/
+}
+.item:nth-child(3){
+    background-image: url(img2/pic03.jpg);
+    grid-column: span 2;
+}
+.item:nth-child(4){
+    background-image: url(img2/pic04.jpg);  
+}
+.item:nth-child(5){
+    background-image: url(img2/pic05.jpg);  
+}
+.item:nth-child(6){
+    background-image: url(img2/pic06.jpg);
+    grid-column: span 2;
+}
+.item-content{
+    /*выравниваем элемент по центру с использованием positon:absolute*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*сдвигаем элемент влево и вверх на половины его длины и шириныб чтобы выравнить до конца*/
+    color: aliceblue;
+    z-index: 10;
+}
+.item hr{
+    margin-bottom: 5px;
+    margin: 5px;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    width: 160px;
+}
+.item-cover{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position:absolute;
+}
+.obomne,.contact{
+    background-color:#2a2f4a;
+    color: aliceblue;
+    padding: 100px 0;
+}
+.obomne p,.contact p{
+    margin: 30px;
+}
+.obomne h1,.contact h1{
+    text-align:center;
+    font-size: 40px;
+}
+.obomne button{
+    width: 220px;
+    height: 70px;
+    background: none;
+    outline: none;
+    border: 3px solid white;
+    color: white;
+    margin-left:50px;
+    vertical-align: top;
+}
+.cover1{
+    background-color: rgba(122, 192, 216, 0.7);
+}
+.cover2{
+    background-color: rgba(143, 134, 193, 0.7);
+}
+.cover3{
+    background-color: rgba(229, 146, 137, 0.7);
+}
+.cover4{
+    background-color: rgba(223, 182,144, 0.7);
+} 
+.cover5{
+    background-color: rgba(139, 161, 218, 0.7);
+}  
+.cover6{
+    background-color: rgba(121, 174,150,0.7);
+}
+.item-cover:hover{
+    background-color: rgba(233, 233, 43, 0.3);
+}
+.item:hover{
+background-size: 1000px;
+/* transform: scale(1.1);
+/* transition: 10s */
+}
+.contact{
+    background-color: #191d35;
+}
+.control{
+    display: flex;
+    justify-content: center;
+    /* margin: 20px; */
+    flex-direction: column;
+    margin-left: 5px;
+}
+/*.wor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}*/
+.control input{
+    background-color:#2a2f4a;
+    border: none;
+    padding: 10px;
+    margin-top: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.control textarea{
+    background-color:#2a2f4a;
+    color: aliceblue;
+    border: none;
+    resize: none;
+    height: 120px;
+    margin-top: 8px;
+}
+.wor{
+    display: grid;
+    grid-template-columns:400px 400px;
+    grid-gap:5px;
+    width: 800px;
+    margin: auto;
+}
+.text{
+    grid-column: span 2;
+}
+/*.contact hr{
+    width: 560px;
+    margin-left: 268px;
+}*/
+form{
+    margin-top: 20px;
+}
+.obomne button:hover{
+    background-color: #191d35;
+}
+почитать пр
+сделать реакцию для кнопки обо мне
+выложить на гетхаб
+выложить такой же эфект на инсбруке
+эффект тразишн для кнопок
+Александр Сокирка
+гоша дударь
+web developer blog
